@@ -1,27 +1,75 @@
 import Cabecalho from "../Components/Cabecalho";
 import Rodape from "../Components/Rodape";
-
-
+import { useState } from "react";
+import style from '../Style/jean.module.css'
 
 function Login () {
+
+    const [login, setLogin] = useState('Login')
+
     return(
-        <div className="loginGeral">
-            <Cabecalho />
-            <div className="login-card">
-                <div className="login">
-                    <h1>Login</h1>
-                    <p>Faça seu login para acessar sua conta!</p>
-                    <p>E-mail:</p> <input className="divInput" type="text" />
-                    <p>Senha:</p> <input className="divInput" type="password" />
-                    <br />
-                    Não tem conta? <a href="/cadastro">Cadastre-se</a>
-                    <br /><br />
-                    <button>Entrar</button> 
-                    
+        <div className={style.containerLogin}>
+        <Cabecalho />
+      
+        <div className={style.loginGeral}>
+            
+            <div className={style.loginCard}>
+                <div className={style.bemVindo}>
+                    <p>BEM-VINDO</p>
+                    <span>Estamos aqui para te apoiar.</span>
                 </div>
+                <div className={style.form}>
+                    <div className={style.formDiv}>
+                    {
+                        login === 'Login'?(
+                            <></>
+                        ) : (
+                    <div className={style.email}>
+                        <label>Nome:</label> <input className="divInput" type="text" placeholder="Digite seu nome" />
+                    </div>
+                        )
+                    }
+                   
+                    <div className={style.email}>
+                        <label>E-mail:</label> <input className="divInput" type="email" placeholder="Digite seu email" />
+                    </div>
+                    <div className={style.email}>
+                        <label>Senha:</label> <input className="divInput" type="password"  placeholder="Digite sua senha" />
+                    </div>
+                    </div>
+                    <div className={style.esqueciSenha}>
+                        <span onClick={()=>{}} className="botaoCadastro">Esqueci a senha</span>
+                   </div>
+                </div>
+                    
+                   
+
+                    <div className={style.containerCadastreSe}>
+                        
+                        <button >{
+                            login === 'Login'? 'Entrar' : 'Cadastrar'
+                            }</button>   
+                    </div>
+                 
+                    {
+                        login === 'Login'? (
+                            <div className={style.cadastreSe}>
+                              <p>Não tem uma conta?  </p>  <span onClick={()=>setLogin('Cadastre-se')} className="botaoCadastro">Cadastre-se</span>
+                            </div>
+                      
+                        ) : (
+                            
+                            <div className={style.cadastreSe}>
+                              <p> Já tenho uma conta. </p>  <span onClick={()=>setLogin('Login')} className="botaoCadastro">Login</span>
+                            </div>
+                        )
+                    }
+               
             </div>
-            <Rodape />
+                    
         </div>
+         <Rodape />
+     </div>
     )
 }
 

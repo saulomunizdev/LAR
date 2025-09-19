@@ -1,0 +1,126 @@
+.containerLogin{
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  background-image: url(../assets/bgLogin2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+.loginGeral{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginCard {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  border: 1px solid black;
+  border-radius: 32px;
+  background-color: #FFF;
+  box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.233);
+}
+.bemVindo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+.bemVindo > p{
+  font-size: 45px;
+  font-weight: bold;
+} 
+
+.bemVindo > span{
+  font-family: cursive;
+} 
+
+.form{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.formDiv{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 0px;
+  gap: 10px;
+}
+.email{
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.containerCadastreSe{
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+  gap: 10px;
+  margin: 20px 0px;
+
+
+}
+
+.cadastreSe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cadastreSe > p{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.cadastreSe > span{
+  cursor: pointer;
+}
+
+.esqueciSenha{
+  display: flex;
+  justify-content: end;
+}
+
+.botaoCadastro{
+  color: rgb(23, 140, 218);
+  font-family: sans-serif;
+}
+
+.botaoCadastro:hover{
+  text-decoration: underline;
+}
+
+
+.loginCard .divInput{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.loginCard button{
+  width: 100%;
+  padding: 10px;
+  background-color: #A9DBEC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginCard button:hover{
+  background-color: #757575;
+} 
+
