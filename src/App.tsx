@@ -16,6 +16,7 @@ import Instituicao from "./Pages/Instituicao";
 import Contador from "./Pages/Contador";
 import PaiFilho from "./Pages/PaiFilho";
 import EsqueciSenha from "./Pages/EsqueciSenha.tsx";
+import ResetarSenha from "./Pages/ResetarSenha/index.tsx";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <Route path="/doacao" element={<FormAjuda />} />
       <Route path="/paifilho" element={<PaiFilho />} />
       <Route path="/esqueci-senha" element={<EsqueciSenha />} />
+      <Route path="/resetar-senha" element={<ResetarSenha />} />
     </Routes>
   );
 }
