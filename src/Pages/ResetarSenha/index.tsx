@@ -21,7 +21,7 @@ export default function ResetarSenha() {
   const {
     register: registerPassword,
     handleSubmit: handleSubmitPassword,
-    formState: { errors: errorsPassword },
+    formState: { errors: errorsPassword, isSubmitting },
   } = useForm<FormData>({
     mode: "onBlur",
     resolver: zodResolver(schema),
@@ -30,8 +30,9 @@ export default function ResetarSenha() {
 
   console.log(errorsPassword);
 
-  const onSubmitPassword = (data: FormData) => {
+  const onSubmitPassword = async (data: FormData) => {
     console.log(data);
+    await new Promise((resolve) => setTimeout(resolve, 2000));
   };
 
   return (
@@ -51,6 +52,7 @@ export default function ResetarSenha() {
               {...registerPassword("password")}
               type="password"
               placeholder="Digite sua senha"
+              autoFocus={true}
             />
             {errorsPassword.password && (
               <span className={S.error}>{errorsPassword.password.message}</span>
@@ -63,12 +65,15 @@ export default function ResetarSenha() {
               type="password"
               placeholder="Digite sua senha"
             />
-            {errorsPassword.password && (
-              <span className={S.error}>{errorsPassword.password.message}</span>
+            {errorsPassword.confirmPassword && (
+              <span className={S.error}>
+                {errorsPassword.confirmPassword.message}
+              </span>
             )}
           </div>
-          <button className={S.button} type="submit">
-            Enviar
+
+          <button type="submit" disabled={isSubmitting} className={S.button}>
+            {isSubmitting ? <span className={S.spinner}></span> : "Enviar"}
           </button>
         </form>
         <div className={S.containerImage}>

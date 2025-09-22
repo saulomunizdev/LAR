@@ -15,7 +15,7 @@ export default function EsqueciSenha() {
   const {
     register: registerEmail,
     handleSubmit: handleSubmitEmail,
-    formState: { errors: errorsEmail },
+    formState: { errors: errorsEmail, isSubmitting },
   } = useForm<FormData>({
     mode: "onBlur",
     resolver: zodResolver(schema),
@@ -24,8 +24,10 @@ export default function EsqueciSenha() {
 
   console.log(errorsEmail);
 
-  const onSubmitEmail = (data: FormData) => {
+  const onSubmitEmail = async (data: FormData) => {
     console.log(data);
+
+    await new Promise((resolver) => setTimeout(resolver, 2000));
   };
 
   return (
@@ -45,13 +47,14 @@ export default function EsqueciSenha() {
               {...registerEmail("email")}
               type="email"
               placeholder="Digite seu E-mail"
+              autoFocus={true}
             />
             {errorsEmail.email && (
               <span className={S.error}>{errorsEmail.email.message}</span>
             )}
           </div>
-          <button className={S.button} type="submit">
-            Enviar
+          <button type="submit" disabled={isSubmitting} className={S.button}>
+            {isSubmitting ? <span className={S.spinner}></span> : "Enviar"}
           </button>
         </form>
         <div className={S.containerImage}>
