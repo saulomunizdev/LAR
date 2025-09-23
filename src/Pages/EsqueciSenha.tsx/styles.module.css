@@ -111,3 +111,9 @@
     transform: rotate(360deg);
   }
 }
+
+.btnVoltar {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #131313ff;
+}

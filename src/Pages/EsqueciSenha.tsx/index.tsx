@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import z from "zod/v3";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Cabecalho from "../../Components/Cabecalho";
+import { Link } from "react-router-dom";
 
 const schema = z.object({
   email: z.string().email("Email inválido"),
@@ -56,6 +57,9 @@ export default function EsqueciSenha() {
           <button type="submit" disabled={isSubmitting} className={S.button}>
             {isSubmitting ? <span className={S.spinner}></span> : "Enviar"}
           </button>
+          <Link to={"/login"} className={S.btnVoltar}>
+            Voltar
+          </Link>
         </form>
         <div className={S.containerImage}>
           <img src={forget_password} alt="" />
