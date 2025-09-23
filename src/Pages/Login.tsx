@@ -25,20 +25,20 @@ function Login () {
                             <></>
                         ) : (
                     <div className={style.email}>
-                        <label>Nome:</label> <input className="divInput" type="text" placeholder="Digite seu nome" />
+                        <label>Nome:</label> <input className={style.divInput} type="text" placeholder="Digite seu nome" />
                     </div>
                         )
                     }
                    
                     <div className={style.email}>
-                        <label>E-mail:</label> <input className="divInput" type="email" placeholder="Digite seu email" />
+                        <label>E-mail:</label> <input className={style.divInput}  type="email" placeholder="Digite seu email" />
                     </div>
                     <div className={style.email}>
-                        <label>Senha:</label> <input className="divInput" type="password"  placeholder="Digite sua senha" />
+                        <label>Senha:</label> <input className={style.divInput}  type="password"  placeholder="Digite sua senha" />
                     </div>
                     </div>
                     <div className={style.esqueciSenha}>
-                        <span onClick={()=>{}} className="botaoCadastro">Esqueci a senha</span>
+                        <span onClick={()=>{}} className={style.botaoCadastro}>Esqueci a senha</span>
                    </div>
                 </div>
                     
@@ -54,13 +54,13 @@ function Login () {
                     {
                         login === 'Login'? (
                             <div className={style.cadastreSe}>
-                              <p>Não tem uma conta?  </p>  <span onClick={()=>setLogin('Cadastre-se')} className="botaoCadastro">Cadastre-se</span>
+                              <p>Não tem uma conta?  </p>  <span onClick={()=>setLogin('Cadastre-se')} className={style.botaoCadastro}>Cadastre-se</span>
                             </div>
                       
                         ) : (
                             
                             <div className={style.cadastreSe}>
-                              <p> Já tenho uma conta. </p>  <span onClick={()=>setLogin('Login')} className="botaoCadastro">Login</span>
+                              <p> Já tenho uma conta. </p>  <span onClick={()=>setLogin('Login')} className={style.botaoCadastro}>Login</span>
                             </div>
                         )
                     }

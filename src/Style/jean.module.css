@@ -1,3 +1,57 @@
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfeff;
+  padding: 60px 30px;
+  border-radius: 0px 0px 20px 20px ; 
+  height: 100px;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.233);
+}
+  
+  /* ESTILO DO BOTÃO DO MENU */
+  
+
+
+.bto {
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: cursive;
+}
+
+button:hover {
+ color: rgb(0, 1, 12);
+  font-weight: bold;
+}
+
+.btoSOS{
+  justify-content: end;
+  background: red;
+  color: white;
+  font-weight: bold;
+  border: red 1px solid;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+
+/* Login e Cadastro */
+
 .containerLogin{
   display: flex;
   flex-direction: column;

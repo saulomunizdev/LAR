@@ -8,21 +8,7 @@ text-decoration: none;
 }
 
 
-/* CABEÇALHO */
 
-.cabecalho {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fcfeff;
-  padding: 60px 30px;
-  border-radius: 0px 0px 20px 20px ; 
-  height: 100px;
-  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.233);
-}
-  
 .cab-menu1, .cab-menu2 {
     color: white;
     font-size: 20px;
@@ -64,40 +50,7 @@ text-decoration: none;
     padding: 10px;
   }
 
-  /* ESTILO DO BOTÃO DO MENU */
-  
 
-
-.bto {
-  background: transparent;
-  border: #A9DBEC 1px solid;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  color: white;
-  /* text-decoration: underline;
-  text-decoration-color: white; */
-  /* text-decoration-style: wavy; */
-  font-weight: bold;
-}
-
-.btoSOS{
-  background: red;
-  color: white;
-  font-weight: bold;
-  border: red 1px solid;
-  border-radius: 50px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.3s ease;
-}
 
 
 
