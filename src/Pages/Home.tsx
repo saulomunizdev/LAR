@@ -1,11 +1,17 @@
+import { useContext } from 'react';
 import Cabecalho from '../Components/Cabecalho';
 import Rodape from '../Components/Rodape';
 import '../Style/style.css'
 import style from '../Style/jean.module.css'
+import { UsuarioLogadoContext } from '../contexts/contextAuth';
 
 
 function Home () {
+
+    const UsuarioCtx = useContext(UsuarioLogadoContext);
+
     return(
+        
         <div>
             <Cabecalho />
             <h1>Empresa</h1>
@@ -17,6 +23,7 @@ function Home () {
 
             </div>
 
+            O nome é: {UsuarioCtx?.name}
             <Rodape />
         </div>
     )

@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
+  width: 100%;
 }
 
 /* Menu lateral */
@@ -21,8 +22,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1;
-  margin-right: 50%;
 }
 
 /* Título centralizado */
@@ -51,7 +50,55 @@
   text-align: left;
 }
 
+/* Imagem  */
+.ilustracaoDireita{
+  width: 690px;
+  height: 542px;
+  align-self: flex-end;
+  
+}
+
 
 .divHs{
-text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.divH1{
+/* colocar no centro da pagina topo */
+display: flex;
+justify-content: center;
+justify-items: center;
+align-self: center;
+} 
+
+.divH2 {
+  /* colocar no centro da pagina topo */
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.divCheckBox{
+  flex-direction: column;
+  flex: 2;
+
+}
+
+.FormAjuda{
+  margin-left: 2%;
+  display: flex;
+  
+}
+
+.divCheckBox{
+  margin-left: 2%;
+
 }
