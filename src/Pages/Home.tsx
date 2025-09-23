@@ -1,21 +1,24 @@
-import Cabecalho from '../Components/Cabecalho';
+import MenuCards from '../Components/MenuCards'
 import Rodape from '../Components/Rodape';
 import '../Style/style.css'
-import style from '../Style/jean.module.css'
+import HomeInicio from '../Components/hero';
+import TiposAbusos from '../Components/tiposAbusos';
+import PerguntasFrequentes from '../Components/perguntasFrequentes';
+import CabecalhoHome from '../Components/CabecalhoHome';
 
 
 function Home () {
     return(
         <div>
-            <Cabecalho />
-            <h1>Empresa</h1>
-            <p>A empresa, quer ajudar as instituições e ao publico!</p>
+            <CabecalhoHome/>
             
+            <HomeInicio/>
+            
+            <MenuCards/>
 
-            <div className={style.containerModal}>
-                <h1>Entendendo o que você está sentindo</h1>
+            <TiposAbusos/>
 
-            </div>
+           <PerguntasFrequentes/>
 
             <Rodape />
         </div>

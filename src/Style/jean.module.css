@@ -14,6 +14,22 @@
   height: 100px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.233);
 }
+
+.cabecalhoHome {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfeff;
+  padding: 60px 30px;
+  border-radius: 0px 0px 20px 20px ; 
+  height: 100px;
+}
+
+.Logo{
+  cursor: pointer;
+}
   
   /* ESTILO DO BOTÃO DO MENU */
   
@@ -50,13 +66,35 @@ button:hover {
 }
 
 
+/* Página Home */
+
+.homeInicio{
+  height: 100dvh;
+}
+
+.menuCards{
+  font-family: cursive;
+  text-align: center;
+  background-color: #D3D2E2;
+  height: 100dvh;
+}
+
+.tiposAbusos{
+  height: 100dvh;
+  background-color: #F1C5A1;
+}
+
+.perguntasFrequentes{
+    height: 100dvh;
+}
+
 /* Login e Cadastro */
 
 .containerLogin{
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  background-image: url(../assets/bgLogin2.png);
+  background-image: url(../assets/imagens/bgLogin2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

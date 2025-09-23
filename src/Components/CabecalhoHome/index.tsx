@@ -4,7 +4,7 @@ import logo from '../../assets/imagens/image1.png'
 import style from '../../Style/jean.module.css'
 
 
-function Cabecalho () {
+function CabecalhoHome () {
 
 const navigate = useNavigate();
     
@@ -28,10 +28,10 @@ function handleNavegarSos(){
 }
     return (
         <div>
-         <div className={style.cabecalho}>
-            <a href='/' className={style.Logo}>
+         <div className={style.cabecalhoHome}>
+            <div className={style.Logo}>
                 <img src={logo} alt="Logo" />
-            </a>
+            </div>
             
            <div>
                 <button className={style.bto} onClick={handleNavegarHome}>Home</button>
@@ -49,4 +49,4 @@ function handleNavegarSos(){
     )
 }
 
-export default Cabecalho
+export default CabecalhoHome
