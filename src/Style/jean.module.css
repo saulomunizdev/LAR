@@ -114,10 +114,17 @@ button:hover {
 
 /*---------------------------------------------*/
 .menuCards{
+  display: flex;
+  justify-content: center;
   font-family: cursive;
-  text-align: center;
-  background-color: #D3D2E2;
+  background-image: url(../assets/imagens/vector.png);
   height: 100dvh;
+}
+
+.menuCards > h1{
+  display: flex;
+  margin-top: 200px ;
+
 }
 
 .tiposAbusos{
