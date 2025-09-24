@@ -20,7 +20,7 @@ function Home () {
 
            <PerguntasFrequentes/>
 
-            <Rodape />
+            {/* <Rodape /> */}
         </div>
     )
 }

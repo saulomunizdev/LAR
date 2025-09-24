@@ -66,12 +66,53 @@ button:hover {
 }
 
 
-/* Página Home */
+/*Hero Home Inicio*/
 
 .homeInicio{
   height: 100dvh;
+  background-image: url(../assets/imagens/homeInicio1.png);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.textoHome{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin:300px 200px 20px 200px;
+}
+ 
+ .textoHome > h1{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: cursive;
+  margin-bottom: 20px;
+} 
+
+.textoHome > span{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.btoAjuda{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 250px;
+  height: 60px;
+  background-color: #D3D2E2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+/*---------------------------------------------*/
 .menuCards{
   font-family: cursive;
   text-align: center;
@@ -156,8 +197,6 @@ button:hover {
   font-family: cursive;
   gap: 10px;
   margin: 20px 0px;
-
-
 }
 
 .cadastreSe{
@@ -215,4 +254,11 @@ button:hover {
 .loginCard button:hover{
   background-color: #757575;
 } 
+
+
+
+
+
+
+
 

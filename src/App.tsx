@@ -13,7 +13,6 @@ import DetalheQueroAjuda from "./Pages/DetalheInstituicaoQueroAjuda";
 import NotFound from "./Pages/NotFound";
 import Sos from "./Pages/Sos";
 import Instituicao from "./Pages/Instituicao";
-import Contador from "./Pages/Contador";
 import PaiFilho from "./Pages/PaiFilho";
 import EsqueciSenha from "./Pages/EsqueciSenha.tsx";
 import ResetarSenha from "./Pages/ResetarSenha/index.tsx";
@@ -39,7 +38,6 @@ function App() {
       />
       <Route path="/sos" element={<Sos />} />
       <Route path="/instituicao" element={<Instituicao />} />
-      <Route path="/contador" element={<Contador />} />
       <Route path="/formulario" element={<FormQueroAjuda />} />
       <Route path="/doacao" element={<FormAjuda />} />
       <Route path="/paifilho" element={<PaiFilho />} />
