@@ -9,12 +9,12 @@ function RodapeHome() {
             <footer className={style.rodapeHome}>
 
                 <div className={style.redesRodape}>
-                    <span className={style.redesSociais}>ACOMPANHE O LAR NAS REDES SOCIAIS: <img src={facebook} alt="facebook" /> <img src={instagram} alt="instagram" /></span>
-                    <hr />
+                    <span className={style.redesSociais}>ACOMPANHE O LAR NAS REDES SOCIAIS:  <img src={facebook} alt="facebook" /> <img src={instagram} alt="instagram" /></span>
+                    <br />
                     <span>FALE CONOSCO</span>
-                    <hr />
+                    <br />
                     <span>POLÍTICA DE PRIVACIDADE</span>
-                    <hr /> <br /> <br />
+                     <br /> <br />
 
                         <div className={style.criadoLar}>
                             <h1>© 2025 - Criado por LAR  </h1> 

@@ -112,20 +112,50 @@ button:hover {
 }
 
 
-/*---------------------------------------------*/
+
+
+/* MENU CARDS */
 .menuCards{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: cursive;
   background-image: url(../assets/imagens/vector.png);
-  height: 100dvh;
+  background-size: cover;
+  height: 130dvh;
+  gap: 20px;
 }
 
 .menuCards > h1{
   display: flex;
   margin-top: 200px ;
-
 }
+
+.containerCards {
+  display: grid;        
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin: 0px 450px;             
+}
+
+.card { 
+  padding: 10px;     
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc; 
+  border-radius: 20px;  
+  margin: 20px;          
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.card > h2{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+
+
+/*---------------------------------------------*/
 
 .tiposAbusos{
   height: 100dvh;
@@ -268,18 +298,25 @@ button:hover {
 .rodapeHome{
   display: flex;
   height: 50dvh;
-  background-color: #D3D2E2;
+  background-image: url(../assets/imagens/rodapeHome.png);
+  background-size: cover;
 }
 
 .redesRodape{
-
   height: 100px;
   margin: 150px 0px 0px 250px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
 }
 
+.redesRodape > span{
+   text-decoration: underline;
+}
+
+.redesSociais{
+   text-decoration: underline;
+}
 .redesSociais > img{
   width: 35px;
   height: 35px;
@@ -292,13 +329,13 @@ button:hover {
 
 }
 .criadoLar > h1{
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
 }
 .criadoLar > p{
   font-size: 15px;
   font-weight: lighter;
-    margin: 10px 0px 0px 15px;
+    margin: 8px 0px 0px 15px;
 }
 
 
