@@ -123,8 +123,9 @@ button:hover {
   font-family: cursive;
   background-image: url(../assets/imagens/vector.png);
   background-size: cover;
-  height: 130dvh;
+  height: 110dvh;
   gap: 20px;
+  position: relative;
 }
 
 .menuCards > h1{
@@ -135,7 +136,8 @@ button:hover {
 .containerCards {
   display: grid;        
   grid-template-columns: 1fr 1fr 1fr; 
-  margin: 0px 450px;             
+  margin: 0px 450px; 
+  cursor: pointer;            
 }
 
 .card { 
@@ -145,16 +147,29 @@ button:hover {
   border-radius: 20px;  
   margin: 20px;          
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+
 }
 
-.card > h2{
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 15px;
+.card > h3{
+  margin: 15px 10px;
 }
 
+.card > p{
+  font-weight: lighter;
+  font-family: serif;
+}
 
+.meusCardsContainer{
+  position: absolute;
+  background-color: black;
+  padding: 200px;
+  color: white;
+  
+}
 
+.voltarCards{
+  cursor: pointer;
+}
 /*---------------------------------------------*/
 
 .tiposAbusos{
