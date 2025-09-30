@@ -14,6 +14,22 @@
   height: 100px;
   box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.233);
 }
+
+.cabecalhoHome {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfeff;
+  padding: 60px 30px;
+  border-radius: 0px 0px 20px 20px ; 
+  height: 100px;
+}
+
+.Logo{
+  cursor: pointer;
+}
   
   /* ESTILO DO BOTÃO DO MENU */
   
@@ -50,13 +66,128 @@ button:hover {
 }
 
 
+/*Hero Home Inicio*/
+
+.homeInicio{
+  height: 100dvh;
+  background-image: url(../assets/imagens/homeInicio1.png);
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textoHome{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin:300px 200px 20px 200px;
+}
+ 
+ .textoHome > h1{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  font-family: cursive;
+  margin-bottom: 20px;
+} 
+
+.textoHome > span{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.btoAjuda{
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 250px;
+  height: 60px;
+  background-color: #D3D2E2;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+/* MENU CARDS */
+.menuCards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  background-image: url(../assets/imagens/vector.png);
+  background-size: cover;
+  height: 110dvh;
+  gap: 20px;
+  position: relative;
+}
+
+.menuCards > h1{
+  display: flex;
+  margin-top: 200px ;
+}
+
+.containerCards {
+  display: grid;        
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin: 0px 450px; 
+  cursor: pointer;            
+}
+
+.card { 
+  padding: 10px;     
+  background-color: #f0f0f0; 
+  border: 1px solid #ccc; 
+  border-radius: 20px;  
+  margin: 20px;          
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+
+}
+
+.card > h3{
+  margin: 15px 10px;
+}
+
+.card > p{
+  font-weight: lighter;
+  font-family: serif;
+}
+
+.meusCardsContainer{
+  position: absolute;
+  background-color: black;
+  padding: 200px;
+  color: white;
+  
+}
+
+.voltarCards{
+  cursor: pointer;
+}
+/*---------------------------------------------*/
+
+.tiposAbusos{
+  height: 100dvh;
+  background-color: #F1C5A1;
+}
+
+.perguntasFrequentes{
+    height: 100dvh;
+}
+
 /* Login e Cadastro */
 
 .containerLogin{
   display: flex;
   flex-direction: column;
   height: 100dvh;
-  background-image: url(../assets/bgLogin2.png);
+  background-image: url(../assets/imagens/bgLogin2.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -118,8 +249,6 @@ button:hover {
   font-family: cursive;
   gap: 10px;
   margin: 20px 0px;
-
-
 }
 
 .cadastreSe{
@@ -177,4 +306,51 @@ button:hover {
 .loginCard button:hover{
   background-color: #757575;
 } 
+
+
+/*Rodapé da Home*/
+
+.rodapeHome{
+  display: flex;
+  height: 50dvh;
+  background-image: url(../assets/imagens/rodapeHome.png);
+  background-size: cover;
+}
+
+.redesRodape{
+  height: 100px;
+  margin: 150px 0px 0px 250px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.redesRodape > span{
+   text-decoration: underline;
+}
+
+.redesSociais{
+   text-decoration: underline;
+}
+.redesSociais > img{
+  width: 35px;
+  height: 35px;
+}
+
+
+.criadoLar{
+  display: flex;
+  flex-direction: row;
+
+}
+.criadoLar > h1{
+  font-size: 25px;
+  font-style: italic;
+}
+.criadoLar > p{
+  font-size: 15px;
+  font-weight: lighter;
+    margin: 8px 0px 0px 15px;
+}
+
 
