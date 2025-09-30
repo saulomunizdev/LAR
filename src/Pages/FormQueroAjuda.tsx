@@ -1,117 +1,86 @@
-import { useState } from "react";
 import style from './../Style/saulo.module.css';
-import ilustracao from './../images/Formulario.jpg'; // ajuste o caminho conforme necessário
+import ilustracao from './../images/Formulario.jpg';
 
 
-function FormQueroAjuda () {
+function FormQueroAjuda() {
 
-
-    const [nome, setNome] = useState('');
-    function modificarNome (evento: React.ChangeEvent <HTMLInputElement>) {
-        setNome(evento.target.value);
-    }
-
-
-    const [telefone, setTelefone] = useState('');
-    function modificarTelefone (evento: React.ChangeEvent <HTMLInputElement>) {
-        setTelefone(evento.target.value);
-    }
-
-
-    const [email, setEmail] = useState('');
-    function modificarEmail (evento: React.ChangeEvent <HTMLInputElement>) {
-        setEmail(evento.target.value);
-    }
-
-    const [assunto, setAssunto] = useState('');
-    function modificarAssunto (evento: React.ChangeEvent <HTMLInputElement>) {
-        setAssunto(evento.target.value);
-    }
-
-    const [cidade, setCidade] = useState('');
-    function modificarCidade (evento: React.ChangeEvent <HTMLInputElement>) {
-        setCidade(evento.target.value);
-    }
-
-    const [estado, setEstado] = useState('');
-    function modificarEstado (evento: React.ChangeEvent <HTMLInputElement>) {
-        setEstado(evento.target.value);
-    }
-
-    return(
-        <div className={style.divFormGeral}>
-            
-            <div className={style.divFormGeral}>
-            
-                <div className={style.divLateral}>
-                    <h1>Olá!</h1>
-                    <hr />
-                    <p> Estamos felizes por você estar dando esse grande passso. </p>
-                    <p> Calma, tudo vai melhorar só precisamos que você responda o formulário para entedermos melhor como podemos te ajudar. </p>
-                    <p> Em casos de emergência para assunstos psicologiocos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
-                    <p> Em casos de emergência para abusos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
-                </div>
-
-                <div className={style.divHs}>
-                    <h1 className={style.divH1}>FORMULÁRIO DE AJUDA</h1> <br />
-                    <h2 className={style.divH2}>Informe todas as informações abaixo </h2> <br />
-                   
-
-                    <div className={style.divPaiForAjuda}>
-                    
-                        <div className={style.FormAjuda}>
-                            <p className={style.FormParagrafo}>Nome</p>
-                            <input className={style.FormInput} onChange={modificarNome} type="text" placeholder="Digite seu nome" /> <br /><br />
-                            <p className={style.FormParagrafo}>Telefone</p> 
-                            <input className={style.FormInput} onChange={modificarTelefone} type="text" placeholder="Digite seu telefone" /> <br /><br />
-                            <p className={style.FormParagrafo}>Email</p>
-                            <input className={style.FormInput} onChange={modificarEmail} type="text" placeholder="Digite seu e-mail" /> <br /><br />
-                            <p className={style.FormParagrafo}>Assunto</p>
-                            <input className={style.FormInput} onChange={modificarAssunto} type="text" placeholder="Digite a doença" /> <br /><br />
-                            <p className={style.FormParagrafo}>Cidade</p>
-                            <input className={style.FormInput} onChange={modificarCidade} type="text" placeholder="Digite o nome da sua cidade" /> <br /><br />
-                            <p className={style.FormParagrafo}>Estado</p>
-                            <input className={style.FormInput} onChange={modificarEstado} type="text" placeholder="Digite o nome do seu estado" /> <br /><br />
-                        </div>
-
-                        <div className={style.divCheckBox}>
-                            <p className={style.FormParagrafo}>O que você sente?</p>
-                            <input type="checkbox" /> Tremor <br />
-                            <input type="checkbox" /> Cansaço <br />
-                            <input type="checkbox" /> Desanimo <br />
-                            <input type="checkbox" /> Falta de ar <br />
-                            <input type="checkbox" /> Agonia <br />
-                            <input type="checkbox" /> Falta de foco <br />
-                            <input type="checkbox" /> Alteração de humor <br />
-                            <input type="checkbox" /> Sensação de desconexão <br />
-                            <input type="checkbox" /> Preocupação com peso <br />
-                            <input type="checkbox" /> Perda de interesse <br />
-                            <input type="checkbox" /> Sofri abuso psicologico <br />
-                            <input type="checkbox" /> Sofri abuso fisico <br />
-                            <input type="checkbox" /> Sofri abuso sexual <br />
-                            <input type="checkbox" /> Sofri abuso patrimonial <br />
-                            <input type="checkbox" /> Sofri abuso moral <br /><br />
-                        </div>
-
-                        <button className={style.btoFormAjuda} >Enviar</button>
-                        <button className={style.btoFormAjuda}>Limpar</button>
-                        <br />
-                    
-                    </div> 
-                <img src={ilustracao} alt="Ilustração" className={style.ilustracaoDireita} />  
-                </div>
-
-
-                 
-
-
-
-
+  return (
+    <div className={style.divFormGeral}>
+      <div className={style.divLateral}>
+        <h1>Olá!</h1>
+        <hr />
+        <p>Estamos felizes por você estar dando esse grande passo.</p>
+        <p>Calma, tudo vai melhorar só precisamos que você responda o formulário para entendermos melhor como podemos te ajudar.</p>
+        <p>Em casos de emergência para assuntos psicológicos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
+        <p>Em casos de emergência para abusos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
+      </div>
+      <div className={style.divConteudo}>
+        <form className={style.formAjuda}>
+          <div className={style.linhaInputs}>
+            <div>
+              <label>Nome</label>
+              <input type="text" placeholder="Digite seu nome" />
             </div>
-
+          </div>
+          <div className={style.linhaInputs}>
+            <div>
+              <label>Telefone</label>
+              <input type="text" placeholder="Digite seu telefone" />
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" placeholder="Digite seu Email" />
+            </div>
+          </div>
+          <div className={style.linhaInputs}>
+            <div>
+              <label>Assunto</label>
+              <input type="text" placeholder="Digite a doença" />
+            </div>
+          </div>
+          <div className={style.linhaInputs}>
+            <div>
+              <label>Cidade</label>
+              <input type="text" placeholder="Digite o nome da sua cidade" />
+            </div>
+            <div>
+              <label>Estado</label>
+              <input type="text" placeholder="Digite o nome do seu estado" />
+            </div>
+          </div>
+          <div className={style.checkboxGrupo}>
+            <p><strong>O que você sente?</strong></p>
+            <div className={style.checkboxColunas}>
+              <div>
+                <label><input type="checkbox" /> Tremor</label>
+                <label><input type="checkbox" /> Cansaço</label>
+                <label><input type="checkbox" /> Desânimo</label>
+                <label><input type="checkbox" /> Falta de ar</label>
+                <label><input type="checkbox" /> Agonia</label>
+                <label><input type="checkbox" /> Falta de foco</label>
+                <label><input type="checkbox" /> Alteração de humor</label>
+                <label><input type="checkbox" /> Sensação de desconexão</label>
+                <label><input type="checkbox" /> Preocupação com peso</label>
+              </div>
+              <div>
+                <label><input type="checkbox" /> Perda de interesse</label>
+                <label><input type="checkbox" /> Sofri abuso psicológico</label>
+                <label><input type="checkbox" /> Sofri abuso físico</label>
+                <label><input type="checkbox" /> Sofri abuso sexual</label>
+                <label><input type="checkbox" /> Sofri abuso patrimonial</label>
+                <label><input type="checkbox" /> Sofri abuso moral</label>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div>
+            <button>Enviar</button>
         </div>
-    )
+        <img src={ilustracao} alt="Ilustração" className={style.ilustracaoDireita} />
+      </div>
+    </div>
+  );
 }
-
 export default FormQueroAjuda;
+
 
