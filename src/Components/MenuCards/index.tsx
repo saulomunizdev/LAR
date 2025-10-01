@@ -31,7 +31,7 @@ function MenuCards(){
             
 
                    { dados_cards.map((item)=>(
-                        <div onClick={() => HandleClickMostrar(item.id)} className={style.card} key={item.id}>
+                    <div onClick={() => HandleClickMostrar(item.id)} className={style.card} key={item.id}>
                         <h3>{item.titulo}</h3>
                         <p>{item.descricao}</p>
                     </div>

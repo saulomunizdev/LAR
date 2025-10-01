@@ -151,25 +151,51 @@ button:hover {
 }
 
 .card > h3{
-  margin: 15px 10px;
+  margin: 0px 15px 0px 30px;
 }
 
 .card > p{
   font-weight: lighter;
   font-family: serif;
+  padding: 10px;
 }
 
 .meusCardsContainer{
   position: absolute;
-  background-color: black;
-  padding: 200px;
-  color: white;
-  
+  padding: 50px 60px;   
+  max-width: 50%;  
+  background-color: #f0f0f0; 
+  border: 4px solid #050000; 
+  border-radius: 20px;  
+  margin: 20px;          
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .voltarCards{
+  position: absolute;
   cursor: pointer;
+  padding:  10px;
 }
+
+.tituloModal > h1{
+  text-align: center;
+  padding-bottom:  50px;
+  font-size: 60px;
+
+}
+
+.topicosModal > h3{
+  padding: 20px 0px;
+}
+
+.topicosModal {
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /*---------------------------------------------*/
 
 .tiposAbusos{
