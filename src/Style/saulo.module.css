@@ -80,3 +80,49 @@
   z-index: 0;
   pointer-events: none;
 }
+
+.divFormBto {
+  display: flex;
+  gap: 40px;
+  position: absolute;
+  top: 24px;
+  right: 48px;
+  margin-bottom: 0; 
+  z-index: 2;
+}
+
+.divBto {
+  background: white;
+  border: none;
+  color: #222;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0 12px;
+  box-shadow: none;
+  outline: none;
+  transition: color 0.2s;
+}
+
+
+/* Botão Enviar estilizado para combinar com o layout */
+.botaoEnviar {
+  margin-top: 24px;
+  padding: 12px 36px;
+  background: #3498f3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(52, 152, 243, 0.08);
+  transition: background 0.2s, transform 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.botaoEnviar:hover,
+.botaoEnviar:focus {
+  background: #2176bd;
+  transform: translateY(-2px) scale(1.03);
+}

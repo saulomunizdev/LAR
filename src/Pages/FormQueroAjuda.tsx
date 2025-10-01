@@ -14,6 +14,10 @@ function FormQueroAjuda() {
         <p>Em casos de emergência para assuntos psicológicos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
         <p>Em casos de emergência para abusos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
       </div>
+      <div className={style.divFormBto}>
+        <button className={style.divBto}>Login</button>
+        <button className={style.divBto}>Quero Ajudar</button>
+      </div>
       <div className={style.divConteudo}>
         <form className={style.formAjuda}>
           <div className={style.linhaInputs}>
@@ -40,6 +44,12 @@ function FormQueroAjuda() {
           </div>
           <div className={style.linhaInputs}>
             <div>
+              <label>Instituição</label>
+              <input type="text" placeholder="Qual instituição" />
+            </div>
+          </div>
+          <div className={style.linhaInputs}>
+            <div>
               <label>Cidade</label>
               <input type="text" placeholder="Digite o nome da sua cidade" />
             </div>
@@ -49,7 +59,7 @@ function FormQueroAjuda() {
             </div>
           </div>
           <div className={style.checkboxGrupo}>
-            <p><strong>O que você sente?</strong></p>
+            <p><strong>O que você sente?</strong></p><br />
             <div className={style.checkboxColunas}>
               <div>
                 <label><input type="checkbox" /> Tremor</label>
@@ -74,7 +84,7 @@ function FormQueroAjuda() {
           </div>
         </form>
         <div>
-            <button>Enviar</button>
+            <button className={style.botaoEnviar}>Enviar</button>
         </div>
         <img src={ilustracao} alt="Ilustração" className={style.ilustracaoDireita} />
       </div>
