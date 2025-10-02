@@ -14,6 +14,7 @@ export type cardsModal  = {
         topico1_1?:string
         topico1_2?:string
         topico1_3?:string
+        topico1_4?:string
 
 }
 
@@ -40,9 +41,6 @@ export const dados_cards: cardsModal[] = [
         titulo2: 'Os sintomas podem ser psicológicos ou físicos: ',
         topico1: 'Psicológicos: Preocupação excessiva e incontrolável, inquietação, tensão, dificuldade em relaxar, medo intenso, sensação de perigo iminente.  ',
         topico2: 'Físicos: Palpitações cardíacas, falta de ar, tremores, suores, tontura, tensão muscular, dores no corpo. ',
-        topico3: '',
-        topico4: '',
-        topico5: ''
     },
      {
         id: '3',
@@ -53,8 +51,6 @@ export const dados_cards: cardsModal[] = [
         topico1:'Desatenção: Dificuldade em manter o foco em atividades, completar tarefas e organizar-se.  ',
         topico2:'Hiperatividade: Agitação, inquietação e dificuldade em ficar sentado ou parado.  ',
         topico3:'Impulsividade: Dificuldade em esperar a vez, interrupção frequente de conversas e respostas rápidas. ',
-        topico4:'',
-        topico5:''
     
     },
      {
@@ -77,12 +73,12 @@ export const dados_cards: cardsModal[] = [
         titulo: 'Transtorno Alimentar',
         descricao: 'Os transtornos alimentares são condições psiquiátricas caracterizadas por alterações persistentes nas refeições ou em comportamentos relacionados aos hábitos alimentares.',
         
-        titulo2:'os sintomas de transtornos alimentares incluem:  ',
+        titulo2:'Os sintomas de transtornos alimentares incluem:  ',
         topico1:'Comportamentais: Restrição alimentar severa, compulsão por comida, vômitos autoinduzidos, uso de laxantes e prática de exercícios físicos de forma excessiva. ',
         topico2:'Físicos: Flutuações de peso significativas e repentinas, ou manutenção de um peso anormalmente baixo. Problemas como tontura, pele seca e queda de cabelo também podem ocorrer.',
         topico3:'Psicológicos: Medo intenso de engordar, percepção distorcida da própria imagem corporal, baixa autoestima, ansiedade e depressão. ',
         topico4:'Sociais: Evasão de eventos sociais que envolvam alimentação. ',
-        topico5:''
+        
     
     },
      {
@@ -93,10 +89,10 @@ export const dados_cards: cardsModal[] = [
         topico1_1:'Obsessões:  ',
             topico1:'Pensamentos, imagens ou impulsos indesejados e recorrentes que causam ansiedade e angústia. ',
             topico2:'Exemplos comuns: medo de contaminação, dúvidas sobre ter feito algo (como trancar a porta), pensamentos intrusivos de violência ou sexo. ',
-        topico1_2:'Compulsões:',
+        topico1_3:'Compulsões:',
             topico3:'Comportamentos ou rituais mentais repetitivos realizados para aliviar a ansiedade causada pelas obsessões. ',
             topico4:'Exemplos comuns: lavar as mãos excessivamente, checar repetidamente, organizar objetos de forma específica ou contar.  ',
-        topico1_3:'Prejuízo na vida diária:',
+        topico1_4:'Prejuízo na vida diária:',
             topico5:'As obsessões e compulsões consomem tempo e energia significativos, atrapalhando a rotina, o trabalho e as relações sociais. ',
             topico6:'O sofrimento e a ansiedade são intensos, levando a um ciclo vicioso de pensamentos e comportamentos.'
     

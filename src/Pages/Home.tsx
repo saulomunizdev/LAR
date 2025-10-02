@@ -1,8 +1,5 @@
 import { useContext } from 'react';
-import Cabecalho from '../Components/Cabecalho';
-import Rodape from '../Components/Rodape';
 import '../Style/style.css'
-import style from '../Style/jean.module.css'
 import { UsuarioLogadoContext } from '../contexts/contextAuth';
 import CabecalhoHome from '../Components/CabecalhoHome';
 import HomeInicio from '../Components/hero';

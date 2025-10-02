@@ -29,25 +29,30 @@ export default function MeusCards({id, HandleClickFechar}:MeusCardsProps){
                 <div className={style.topicosModal}>
                     <h3> {cardsId?.titulo2}</h3>
 
-                 <h3>{cardsId?.topico1_1}</h3>
+                {cardsId?.topico1_1?<h3>{cardsId?.topico1_1}</h3>:''}
                     
-                 <ul>
-                        {cardsId?.topico1?<li> {cardsId?.topico1} </li>:''} 
-                        {cardsId?.topico2?<li> {cardsId?.topico2} </li>:''} 
-                        {cardsId?.topico3?<li> {cardsId?.topico3} </li>:''} 
-                </ul>
+                        <ul>
+                                {cardsId?.topico1?<li> {cardsId?.topico1} </li>:''} 
+                                {cardsId?.topico2?<li> {cardsId?.topico2} </li>:''} 
+                        </ul>
+                {cardsId?.topico1_3?<h3>{cardsId?.topico1_3}</h3>:''}
+                        <ul>
+                            {cardsId?.topico3?<li> {cardsId?.topico3} </li>:''} 
+                        </ul>
+                        
+                {cardsId?.topico1_2?<h3>{cardsId?.topico1_2}</h3>:''}
 
-                <h3>{cardsId?.topico1_2}</h3>
+                        <ul>
+                            {cardsId?.topico4?<li> {cardsId?.topico4} </li>:''} 
+                        </ul>    
+                {cardsId?.topico1_4?<h3>{cardsId?.topico1_4}</h3>:''}
+                        <ul>
+                            {cardsId?.topico5?<li> {cardsId?.topico5} </li>:''} 
+                            {cardsId?.topico6?<li> {cardsId?.topico6} </li>:''} 
+                        </ul>
 
-                <ul>
-                    {cardsId?.topico4?<li> {cardsId?.topico4} </li>:''} 
-                    {cardsId?.topico5?<li> {cardsId?.topico5} </li>:''} 
-                    {cardsId?.topico6?<li> {cardsId?.topico6} </li>:''} 
-                 </ul>
-
-                 <h3>{cardsId?.topico1_3}</h3>
-                </div>
-             
             </div>
+             
+        </div>
     )
 } 
