@@ -1,6 +1,7 @@
 import { useState } from "react";
 import style from './../Style/saulo.module.css';
 import ilustracao from './../images/Formulario.jpg';
+import CabecalhoHome from "../Components/CabecalhoHome";
 
 
 function FormAjuda () {
@@ -39,7 +40,7 @@ function FormAjuda () {
 
 
     return(
-    <div className={style.divFormGeral}>
+      <div className={style.divFormGeral}>
       <div className={style.divLateral}>
         <h1>Olá!</h1>
         <hr />
@@ -49,8 +50,9 @@ function FormAjuda () {
         <p>Em casos de emergência para abusos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
       </div>
       <div className={style.divFormBto}>
-        <button className={style.divBto}>Login</button>
+        <button className={style.divBto}>Home</button>
         <button className={style.divBto}>Preciso de ajuda</button>
+        <button className={style.divBto}>Login</button>
       </div>
       <div className={style.divConteudo}>
         <form className={style.formAjuda}>

@@ -18,10 +18,10 @@ function handleNavegarInstituicao(){
     navigate('/instituicao')
 }
 function handleNavegarInstituicaoAjuda(){
-    navigate('/instituicaoAjuda')
+    navigate('/formajuda')
 }
 function handleNavegarPrecisoAjuda(){
-    navigate('/instituicaoQueroAjuda')
+    navigate('/formulario')
 }
 function handleNavegarSos(){
     navigate('/Sos')

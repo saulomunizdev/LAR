@@ -15,8 +15,9 @@ function FormQueroAjuda() {
         <p>Em casos de emergência para abusos ligue para <strong>188</strong> ou <strong>190</strong>.</p>
       </div>
       <div className={style.divFormBto}>
-        <button className={style.divBto}>Login</button>
+        <button className={style.divBto}>Home</button>
         <button className={style.divBto}>Quero Ajudar</button>
+        <button className={style.divBto}>Login</button>
       </div>
       <div className={style.divConteudo}>
         <form className={style.formAjuda}>
